@@ -1,0 +1,61 @@
+@use "../../scss//abstracts/" as *;
+
+.newProduct {
+  flex: 4;
+
+  &__titleName {
+    font-weight: 600;
+  }
+
+  &__form {
+    margin-top: rem(10);
+
+    &__item {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: rem(10);
+
+      > label {
+        color: gray;
+        font-weight: 600;
+        margin-bottom: rem(10);
+      }
+
+      > input {
+        width: 250px;
+        height: rem(30);
+
+        padding: rem(22) rem(10);
+
+        transition: 0.5s;
+        border-color: var(--border-color);
+        border-radius: rem(5);
+        font-size: rem(16);
+
+        &:focus {
+          border-color: var(--button-color);
+        }
+      }
+
+      > select {
+        margin-bottom: rem(10);
+        padding: rem(10) rem(5);
+        outline: none;
+        &:focus {
+          border-color: var(--button-color);
+        }
+      }
+    }
+
+    &__button {
+      border: none;
+      padding: rem(8) rem(22);
+      background-color: teal;
+      border-radius: rem(5);
+      cursor: pointer;
+      color: white;
+      font-size: rem(16);
+    }
+  }
+}

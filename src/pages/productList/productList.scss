@@ -1,0 +1,28 @@
+@use "../../scss/abstracts/" as *;
+.productList {
+  flex: 4;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &__img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: rem(10);
+    }
+  }
+
+  &__edit {
+    border: none;
+    border-radius: rem(10);
+    padding: 7px 15px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: rem(20);
+    font-size: rem(14);
+  }
+}
